@@ -1,9 +1,10 @@
 import chai from 'chai'
+import getBowlingScore from '../src/utils/bowling'
 
 chai.should()
 
 describe ('Test', () => {
-  it ('should return the index of given number', () => {
-    [ 1, 2, 3 ].indexOf(1).should.equal(0)
+  it ('1frame game', () => {
+    getBowlingScore('1').should.equal(1)
   })
 })
