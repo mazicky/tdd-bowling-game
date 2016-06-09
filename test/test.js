@@ -7,5 +7,6 @@ describe ('Test', () => {
   it ('1 frame game', () => {
     getBowlingScore('1-').should.equal(1)
     getBowlingScore('1/').should.equal(10)
+    getBowlingScore('X').should.equal(10)
   })
 })
