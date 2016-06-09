@@ -6,7 +6,7 @@ export default function getBowlingScore(input) {
     const ballScore = parseInt(ball)
     if (!isNaN(ballScore) && '' !== ballScore) {
       score += ballScore
-    } else if (ball === '/') {
+    } else if (ball === '/' || ball === 'X') {
       return 10
     }
   }
