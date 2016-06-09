@@ -1,4 +1,4 @@
 
-export default function getBowlingScore() {
-  return 1
+export default function getBowlingScore(input) {
+  return parseInt(input)
 }
